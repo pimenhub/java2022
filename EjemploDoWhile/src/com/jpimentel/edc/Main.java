@@ -15,7 +15,7 @@ public class Main {
             dw++;
         }
         while (dw < 10);*/
-
+        //Se declara la clase Scanner
         Scanner sc = new Scanner(System.in);
         int dw;
         System.out.println("Introducir un numero");
