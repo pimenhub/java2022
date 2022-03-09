@@ -61,7 +61,6 @@ public class Main {
 
         //Comprobar que el elemento existe en el AL
         System.out.println(arrayList.contains("Leo"));
-
         //Conocer la posicion del elemento en el AL
         System.out.println(arrayList.indexOf("Conejo"));
         System.out.println(arrayList2.indexOf(1.8));
