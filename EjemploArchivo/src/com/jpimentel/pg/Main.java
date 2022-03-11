@@ -14,6 +14,7 @@ public class Main {
         PrintWriter pw;
         try {
             fw = new FileWriter("C:\\Users\\Jonathan Pimentel\\Desktop\\Ejemplo\\Ejemplo.txt");
+            //fw = new FileWriter("C:\\Users\\Jonathan Pimentel\\Desktop\\Ejemplo\\Ejemplo.txt",true);//Cuando no se desea sobreescribir la informacion del archivo
             pw = new PrintWriter(fw);
 
             pw.println("Esta es una prueba de escritura para el archivo recien creado");
