@@ -17,19 +17,21 @@ public class OperacionesAritmeticas {
     //Metodos de las diferentes operaciones aritmeticas
 
     //Suma
-    public int suma(){
+    public int suma() {
         int resultado;
         resultado = (int) (this.d1 + this.d2);
         return resultado;
     }
+
     //Resta
-    public int resta(int a, int b){
+    public int resta(int a, int b) {
         int resultado;
         resultado = a - b;
         return resultado;
     }
+
     //Multiplicacion
-    public void multi(){
+    public void multi() {
         this.sc = new Scanner(System.in);
         System.out.println("Ingrese el primer numero");
         d1 = sc.nextInt();
@@ -37,21 +39,23 @@ public class OperacionesAritmeticas {
         d2 = sc.nextInt();
         int resultado;
         resultado = (int) (d1 * d2);
-        System.out.println("El resulta de la Multiplicacion es "+resultado);
+        System.out.println("El resulta de la Multiplicacion es " + resultado);
     }
+
     //Potencia
-    public void potencia(){
+    public void potencia() {
         this.sc = new Scanner(System.in);
         System.out.println("Ingrese la base");
         d1 = sc.nextInt();
         System.out.println("Ingrese la potencia");
         d2 = sc.nextInt();
         int resultado;
-        resultado = (int) (Math.pow(d1,d2));
-        System.out.println("El resulta de la Multiplicacion es "+resultado);
+        resultado = (int) (Math.pow(d1, d2));
+        System.out.println("El resulta de la Multiplicacion es " + resultado);
     }
+
     //Division
-    public double division(){
+    public double division() {
         double resultado;
         resultado = this.d1 / this.d2;
         return resultado;

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         OperacionesAritmeticas operaciones = new OperacionesAritmeticas();
         Scanner sc = new Scanner(System.in);
         int op;
@@ -28,17 +28,17 @@ public class Main {
         System.out.println("Elige una opcion:");
         op = sc.nextInt();
 
-        while (op > 0 && op <= 10){
-            switch (op){
+        while (op > 0 && op <= 10) {
+            switch (op) {
                 case 1:
                     System.out.println("Sumar");
                     System.out.println("Ingrese el primer numero");
                     operaciones.d1 = sc.nextInt();
                     System.out.println("Ingrese el segundo numero");
                     operaciones.d2 = sc.nextInt();
-                    System.out.println("El resultado de la suma es: "+
+                    System.out.println("El resultado de la suma es: " +
                             operaciones.suma() +
-                            "Resultado de la Suma Multiplicada "+operaciones.suma() * 2);
+                            "Resultado de la Suma Multiplicada " + operaciones.suma() * 2);
                     break;
                 case 2:
                     System.out.println("Resta");
@@ -46,7 +46,7 @@ public class Main {
                     int a = sc.nextInt();
                     System.out.println("Ingrese el segundo numero");
                     int b = sc.nextInt();
-                    System.out.println("El resultado de la resta es: "+
+                    System.out.println("El resultado de la resta es: " +
                             operaciones.resta(a, b));
                     break;
                 case 3:
@@ -55,7 +55,7 @@ public class Main {
                         operaciones.multi();
                         System.out.println("Potencia");
                         operaciones.potencia();
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         e.getMessage();
                         System.err.println("Solo debe de ingresar numeros Enteros");
                     }
@@ -66,7 +66,7 @@ public class Main {
                     operaciones.d1 = sc.nextDouble();
                     System.out.println("Ingrese el segundo numero");
                     operaciones.d2 = sc.nextDouble();
-                    System.out.println("El resultado de la Division es: "+
+                    System.out.println("El resultado de la Division es: " +
                             operaciones.division());
                     break;
             }
