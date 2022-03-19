@@ -2,13 +2,9 @@ package com.jpimentel.pg;
 
 import java.util.Scanner;
 
-public class Main {
-
-    public static void main(String[] args) {
-        // write your code here
-        //Menu m = new Menu();
-        //m.menu();
-        OperacionesAritmeticas operaciones = new OperacionesAritmeticas();
+public class Menu {
+    OperacionesAritmeticas operaciones = new OperacionesAritmeticas();
+    public void menu() {
         Scanner sc = new Scanner(System.in);
         int op;
         System.out.println("*** Menu ***");
