@@ -49,7 +49,7 @@ public class Main {
         //Elimina la primera ocurrecia del elemento en el AL
         System.out.println(arrayList.remove("Tortuga"));
         System.out.println(arrayList.remove("Canario"));
-        System.out.println(arrayList2.remove(1.6));
+        System.out.println(arrayList2.remove(1.8));
 
         //Limpia  todos los elementos que contiene el AL
         arrayList1.clear();
@@ -76,8 +76,9 @@ public class Main {
             System.out.println(s);
         }
         System.out.println("---------------------------------------------");
+        arrayList2.remove(1.7);
         for (int i = 0; i < arrayList2.size(); i++){
-            System.out.println(arrayList2.get(i));
+            System.out.println("["+i+"] "+arrayList2.get(i));
         }
 
     }
