@@ -1,10 +1,11 @@
 package com.jpimentel.pg;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // write your code here
         //Menu m = new Menu();
         //m.menu();
@@ -33,14 +34,19 @@ public class Main {
         while (op > 0 && op <= 10) {
             switch (op) {
                 case 1:
-                    System.out.println("Sumar");
-                    System.out.println("Ingrese el primer numero");
-                    operaciones.d1 = sc.nextInt();
-                    System.out.println("Ingrese el segundo numero");
-                    operaciones.d2 = sc.nextInt();
-                    System.out.println("El resultado de la suma es: " +
-                            operaciones.suma() +
-                            "Resultado de la Suma Multiplicada " + operaciones.suma() * 2);
+                    try {
+                        System.out.println("Sumar");
+                        System.out.println("Ingrese el primer numero");
+                        operaciones.d1 = sc.nextInt();
+                        System.out.println("Ingrese el segundo numero");
+                        operaciones.d2 = sc.nextInt();
+                        System.out.println("El resultado de la suma es: " +
+                                operaciones.suma() +
+                                "Resultado de la Suma Multiplicada " + operaciones.suma() * 2);
+                    }catch (Exception e){
+                        e.getMessage();
+                        System.out.println("ERROR");
+                    }
                     break;
                 case 2:
                     System.out.println("Resta");
@@ -72,6 +78,7 @@ public class Main {
                             operaciones.division());
                     break;
             }
+            sc = new Scanner(System.in);
             System.out.println("Elige una opcion:");
             op = sc.nextInt();
         }
