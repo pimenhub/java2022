@@ -6,6 +6,7 @@ public class Samsung implements Smartphone{
     public Samsung(){
     }
 
+
     @Override
     public void sistema() {
         System.out.println("Android");
