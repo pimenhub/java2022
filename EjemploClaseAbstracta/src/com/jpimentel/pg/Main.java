@@ -35,6 +35,11 @@ public class Main {
         Violin v = new Violin();
         v.holaV();
         System.out.println(v.s(2,3));
+        v.setFuerza("Impactante");
+        System.out.println("----------------------------");
+        v.mostrarMetodos();
+        System.out.println("----------------------------");
+        v.instrumento();
 
         Tambor tt = new Tambor();
         tt.holaT();
