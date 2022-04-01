@@ -17,6 +17,7 @@ public class Controlador implements ActionListener{
         
         this.vista.btnSumar.addActionListener(this);
         this.vista.btnRestar.addActionListener(this);
+        this.vista.btnMulti.addActionListener(this);
     }
     
     //Funcionamiento del Controlador
@@ -33,6 +34,12 @@ public class Controlador implements ActionListener{
         vista.jopResultado.showMessageDialog(this.vista, modelo.resta());
     }
     
+    private void multi(){
+        modelo.setN1(Double.parseDouble(vista.txtN1.getText()));
+        modelo.setN2(Double.parseDouble(vista.txtN2.getText()));
+        vista.jopResultado.showMessageDialog(vista, modelo.multiplicacion());
+    }
+    
     //Metodo abstracto de la implementacion del ActionListener
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -40,6 +47,8 @@ public class Controlador implements ActionListener{
             this.sum();
         if(e.getSource() == vista.btnRestar)
             this.rest();
+        if(e.getSource() == vista.btnMulti)
+            this.multi();
     }
 
     

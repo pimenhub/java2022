@@ -38,5 +38,11 @@ public class ModeloLogico {
         return r;
     }
     
+    public int multiplicacion(){
+        int m;
+        m = (int) (this.n1 * this.n2);
+        return m;
+    }
+    
     
 }

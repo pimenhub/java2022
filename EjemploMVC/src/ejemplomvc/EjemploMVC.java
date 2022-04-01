@@ -13,6 +13,8 @@ public class EjemploMVC {
         Controlador c = new Controlador(ope,ml);
         ope.setVisible(true);
         ope.setLocationRelativeTo(null);
+        ope.setResizable(false);
+        
                
         
     }
