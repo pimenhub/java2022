@@ -45,7 +45,8 @@ public class Modelo {
                 es = "Correr";
                 break;
             case 0:
-                es = "Debe de elegir una palabra";
+                //es = "Debe de elegir una palabra";
+                es = "";
                 break;
             default:
                 es = "No se ha elegido nada";

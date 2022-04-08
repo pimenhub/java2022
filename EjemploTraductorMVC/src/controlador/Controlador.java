@@ -17,6 +17,7 @@ public class Controlador implements ActionListener, WindowListener{
         this.modelo = modelo;
         
         this.vista.btnTraducir.addActionListener(this);
+        this.vista.cbxPalabras.addActionListener(this);
         this.vista.addWindowListener(this);
     }
     
@@ -35,11 +36,15 @@ public class Controlador implements ActionListener, WindowListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.vista.btnTraducir)
             this.traducirPalabra();
+        if(e.getSource() == this.vista.cbxPalabras)
+            this.traducirPalabra();
     }
 
     @Override
     public void windowOpened(WindowEvent e) {
         this.llenado();
+        this.vista.txtPalabraTraducida.setHorizontalAlignment(4);
+        
     }
 
     @Override
