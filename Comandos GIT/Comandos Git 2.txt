@@ -1,0 +1,20 @@
+---COMANDO BASICOS EN GIT---
+---Estos comandos van orientados a la utilizacion de git bash, la herramienta se puede descargar en este link---
+https://git-scm.com/downloads
+
+//NOTA
+Si es primera vez se es necesario hacer Login con los siguientes comandos
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+git clone enlace de git hub //Se realiza para clonar el repositorio en una carpeta de nuestro equipo
+
+//SUBIR CAMBIOS
+git status //valida si ha surgido en cambio que ese necesario subir
+git add . //agrega en espera toda la informacion nueva para subir al repositorio (es recomendable hacer este comando 2 veces)
+git commit -m "mensaje" //es para agregar en nuestro repositorio los cambios con un mensaje adicional
+git push //lanza toda la informacion nueva de los datos validados a nuestro repositorio
+
+//DESCARGAR CAMBIOS
+git pull //descarga los cambios o los nuevos proyectos en nuestro repositorio
+
