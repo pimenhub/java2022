@@ -1,0 +1,30 @@
+GITHUB
+---Contar con una carpeta ya establecida con todos los proyectos
+---Tener creado un repositorio vacio
+
+Si es primera vez se es necesario hacer Login con los siguientes comandos
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+//REPOSITORIO YA CREADO
+---Establecemos la carpeta de origen
+git init
+
+---Agregamos los archivos a memoria para ser subidos
+git add .
+
+---Primer commit
+git commit -m 'mensaje'
+
+---Repositorio ya creado
+git remote add origin https://github.com/aqui-tu-repo.git
+
+---Lanzamos los proyectos
+git push -u origin master
+
+//OBTENER CAMBIOS
+git pull
+//SUBIR CAMBIOS
+git status //valida si ha surgido en cambio que ese necesario subir
+git add . //agrega en espera toda la informacion nueva para subir al repositorio (es recomendable hacer este comando 2 veces)
+git commit -m "mensaje" //es para agregar en nuestro repositorio los cambios con un mensaje adicional
+git push //lanza toda la informacion nueva de los datos validados a nuestro repositorio
