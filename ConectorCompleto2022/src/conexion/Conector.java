@@ -15,7 +15,7 @@ public class Conector {
     private String cadena;
 
     //Declaracion de objetos para la conexion
-    Connection connection;
+    public Connection connection;
     Statement statement;
 
     //Declaracion de metodos para la conexion
